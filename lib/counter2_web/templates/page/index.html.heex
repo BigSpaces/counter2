@@ -1,0 +1,49 @@
+<section class="phx-hero">
+  <h1><%= gettext "Welcome to counting!", name: "Phoenix" %></h1>
+  <p>A page where you realize that you are, actually, still repeating what you did in your first day of school a few decades back...</p>
+  <img src="https://i.giphy.com/media/l41YtZOb9EUABnuqA/giphy.gif" width="250">
+  <p><br></p>
+  <h2>I am counting <%= @count %></h2>
+  <%= form_for @conn, "/", fn f -> %>
+  <%= number_input f, :increment %>
+  <%= submit "Add one!" %>
+  <p>The amount of brains involved in just having that button show up... Seriously</p>
+<% end %>
+</section>
+
+<section class="row">
+  <article class="column">
+    <h2>Resources</h2>
+    <ul>
+      <li>
+        <a href="https://hexdocs.pm/phoenix/overview.html">Guides &amp; Docs</a>
+      </li>
+      <li>
+        <a href="https://github.com/phoenixframework/phoenix">Source</a>
+      </li>
+      <li>
+        <a href="https://github.com/phoenixframework/phoenix/blob/v1.6/CHANGELOG.md">v1.6 Changelog</a>
+      </li>
+    </ul>
+  </article>
+  <article class="column">
+    <h2>Help</h2>
+    <ul>
+      <li>
+        <a href="https://elixirforum.com/c/phoenix-forum">Forum</a>
+      </li>
+      <li>
+        <a href="https://web.libera.chat/#elixir">#elixir on Libera Chat (IRC)</a>
+      </li>
+      <li>
+        <a href="https://twitter.com/elixirphoenix">Twitter @elixirphoenix</a>
+      </li>
+      <li>
+        <a href="https://elixir-slackin.herokuapp.com/">Elixir on Slack</a>
+      </li>
+      <li>
+        <a href="https://discord.gg/elixir">Elixir on Discord</a>
+      </li>
+    </ul>
+  </article>
+</section>
